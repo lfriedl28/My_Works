@@ -1,0 +1,16 @@
+body  {
+	color: #ddd;
+	background-color: #071c71;
+	font-family: Arial, 'Trebuchet MS', verdana, sans-serif;
+	font-size: 0.8em;
+}
+
+h2 {
+	text-shadow: 8px 2px 20px #ddd;
+}
+
+input {
+	border-radius: 4px;
+	padding: 2px 4px;
+	box-shadow: 2px 2px 4px #222;
+}
