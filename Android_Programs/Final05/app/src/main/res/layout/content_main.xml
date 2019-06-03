@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:orientation="vertical">
+
+    <!-- Text line for Card Name -->
+    <EditText
+        android:id="@+id/CardNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="449dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Text Views/Labels -->
+    <TextView
+        android:id="@+id/CardNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:text="Card Name"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/CardNameEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/CardColorsView"
+        android:layout_width="208dp"
+        android:layout_height="191dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginTop="84dp"
+        android:width="200px"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/CardColorsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Card Color(s):"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/CardColorsView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/CardColorsView" />
+
+
+    <!-- Checkboxes for Cards Devotion/color(s) -->
+    <CheckBox
+        android:id="@+id/BlackCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:duplicateParentState="false"
+        android:text="Black"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/GreenCheckBox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/CardColorsView"
+        app:layout_constraintTop_toBottomOf="@+id/CardColorsTextView" />
+
+
+    <CheckBox
+        android:id="@+id/BlueCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:duplicateParentState="false"
+        android:text="Blue"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/WhiteCheckBox"
+        app:layout_constraintEnd_toStartOf="@+id/RedCheckBox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/CardColorsView"
+        app:layout_constraintTop_toBottomOf="@+id/BlackCheckBox"
+        app:layout_constraintVertical_bias="0.652" />
+
+    <CheckBox
+        android:id="@+id/GreenCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginTop="16dp"
+        android:duplicateParentState="false"
+        android:text="Green"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/CardColorsView"
+        app:layout_constraintTop_toBottomOf="@+id/CardColorsTextView" />
+
+    <CheckBox
+        android:id="@+id/RedCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="8dp"
+        android:duplicateParentState="false"
+        android:text="Red"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/ColorlessCheckBox"
+        app:layout_constraintEnd_toEndOf="@+id/CardColorsView"
+        app:layout_constraintTop_toBottomOf="@+id/GreenCheckBox" />
+
+    <CheckBox
+        android:id="@+id/WhiteCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:duplicateParentState="false"
+        android:text="White"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/CardColorsView"
+        app:layout_constraintEnd_toStartOf="@+id/ColorlessCheckBox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/CardColorsView" />
+
+    <CheckBox
+        android:id="@+id/ColorlessCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:duplicateParentState="false"
+        android:text="Colorless"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/CardColorsView"
+        app:layout_constraintEnd_toEndOf="@+id/CardColorsView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Converted Mana Cost"
+        app:layout_constraintBottom_toTopOf="@+id/cmcSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/CardColorsView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CardColorsView" />
+
+
+    <Spinner
+        android:id="@+id/cmcSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:layout_marginStart="32dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/CardColorsView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/cardDescTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:text="Description Text"
+        app:layout_constraintBottom_toTopOf="@+id/CardDescEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cmcSpinner"
+        app:layout_constraintVertical_bias="0.804" />
+
+    <EditText
+        android:id="@+id/CardDescEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="112dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/flavorTextTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Flavor Text"
+        app:layout_constraintBottom_toTopOf="@+id/flavorTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CardDescEditText"
+        app:layout_constraintVertical_bias="0.849" />
+
+    <EditText
+        android:id="@+id/flavorTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/powerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Power"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintEnd_toStartOf="@+id/powerEditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/CardColorsView"
+        app:layout_constraintTop_toBottomOf="@+id/CardNameEditText" />
+
+    <EditText
+        android:id="@+id/powerEditText"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CardNameEditText" />
+
+    <TextView
+        android:id="@+id/toughnessTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Toughness"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintEnd_toStartOf="@+id/toughnessEditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/CardColorsView"
+        app:layout_constraintTop_toBottomOf="@+id/powerTextView" />
+
+    <EditText
+        android:id="@+id/toughnessEditText"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/packTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/powerEditText"
+        app:layout_constraintVertical_bias="0.0"
+        tools:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/packTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Pack/Set Origin:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/CardColorsView"
+        app:layout_constraintTop_toBottomOf="@+id/toughnessTextView" />
+
+    <EditText
+        android:id="@+id/packEditText"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CardColorsView"
+        app:layout_constraintTop_toBottomOf="@+id/packTextView" />
+
+    <TextView
+        android:id="@+id/RarityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Rarity:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/CardColorsView"
+        app:layout_constraintTop_toBottomOf="@+id/packEditText" />
+
+    <Spinner
+        android:id="@+id/raritySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CardColorsView"
+        app:layout_constraintTop_toBottomOf="@+id/RarityTextView" />
+
+    <Button
+        android:id="@+id/submitToDBButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/btn_default"
+        android:onClick="sendToDBOnClick"
+        android:text="Submit"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CardColorsView"
+        app:layout_constraintTop_toBottomOf="@+id/raritySpinner"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="goToCollection"
+        android:text="To Collection"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/CardColorsView" />
+
+
+</android.support.constraint.ConstraintLayout>

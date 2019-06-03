@@ -1,0 +1,32 @@
+table {
+	border: 3px solid #888;
+	border-spacing: 2px;
+}
+
+th {
+	width: 4em;
+	line-height: 3em;
+	font-family: 'Trebuchet MS', Arial, Verdana;
+	font-weight: normal;
+	text-shadow: 0px -1px 0px #222;
+	border-bottom: 3px solid #888;
+	border-radius: 50%;
+}
+
+td {
+	padding: 10px;
+	border: 1px solid #444;
+	text-align: center;
+}
+
+.num {
+	background-color: #0f4fa8;
+	color: #f2f2f9;
+	border-left: 2px solid #ff9f00;
+	border-right: 2px solid #ff9f00;
+}
+
+.chr {
+	background-color: #ffb740;
+	color: #3333a2;
+}

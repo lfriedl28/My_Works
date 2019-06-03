@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".deckCreationActivity">
+
+    <TextView
+        android:id="@+id/DeckNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".2"
+        android:text="Please enter a name for the new deck"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/DeckNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".25" />
+
+    <TextView
+        android:id="@+id/DeckTypeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".2"
+        android:text="What does the deck consist of? (i.e. Goblins, Green, Lifegain etc)"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/DeckTypeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_weight=".5"
+        android:text="What format is this deck?"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+
+
+        <CheckBox
+            android:id="@+id/standardCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".75"
+            android:text="Standard" />
+
+        <CheckBox
+            android:id="@+id/commanderCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".75"
+            android:checked="true"
+            android:text="Commander" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/CreateDeckButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="submitDeckCreation"
+        android:text="Create Deck" />
+
+</LinearLayout>
