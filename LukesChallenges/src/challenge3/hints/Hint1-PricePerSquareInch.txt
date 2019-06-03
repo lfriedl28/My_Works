@@ -1,0 +1,4 @@
+Calculating price per square inch is really easy. It's simply: (cost / area).
+
+Additional hint: cost in an inherited variable that comes from being an extension of Pizza.
+All of the extensions to Pizza can access the value of cost simply by calling "cost;". 

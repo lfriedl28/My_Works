@@ -1,0 +1,23 @@
+ArrayLists function similarly to arrays but their size is expandable.
+They also have the added functionality of being able to insert items at certain indexes, bumping everything else down.
+They're extremely useful. In this program, You'll be using an ArrayList defined like this:
+	ArrayList<Pizza> sortedPizzas = new ArrayList<Pizza>();
+The class defined inside angle brackets "<>" is how you define the type of the ArrayList. In this case, it's an ArrayList of type Pizza.
+As you can see, there aren't any square brackets, thats because ArrayList is an object. You'll never use
+square brackets when working with an ArrayList.
+
+When first defined, ArrayLists are empty but you can add to them using
+
+arrayListName.add(Object o);
+
+And you put whatever you want to add to the list in place of "Object o".
+
+You'll be using a few of the built-in methods of ArrayList, so I thought I'd include them below:
+
+	arrayListName.add(Object o); - adds an element to the end of the ArrayList
+	arrayListName.add(int index, Object o); - adds an element to the ArrayList at the specified location, any element at the location is moved down a spot, and so are all subsequent elements.
+	arrayListName.add(0, Object o); - adds an element to the top of the ArrayList, moving all other elements down.
+	
+	arrayListName.get(int index); - returns the element in the ArrayList at the current index
+	
+	arrayListName.getSize(); - returns the current size of the ArrayList (same as array.length) 

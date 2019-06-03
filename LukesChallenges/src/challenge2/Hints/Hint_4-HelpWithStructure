@@ -1,0 +1,66 @@
+
+
+
+DISCLAIMER: This hint gives away a lot of information about how your program should be set up. If you want to do the program yourself,
+check out the other hints first. This is more of a "last resort before I ask Rydge for help" kind of file. You can use it to compare
+your program to and see if they're similar or if you're having trouble figuring out the structure of your program,
+you can use it as a guideline.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+This is the basic structure of how your code should be lain out:
+
+	private double computeAverage(DiceSet diceSet) {
+		double average = 0.0;
+		
+		//Get an array full of each type of dice present in the diceSet
+		int[] typesOfDice = ???;
+		
+		for(int i = 0; i < typesOfDice.length; i++){
+		
+			//Get the number of dice for the current type of dice from diceSet. 
+			//The current type of dice can be found at: typesOfDice[i]
+			//Asking what a dice's "type" is is the same as asking how many sides it has
+			int numOfDice = ???;
+			
+			average += getAverageOfMultipleDice(???, ???);
+			
+		}
+		
+		return average;
+	}
+	
+	
+	private double getAverageOfMultipleDice(int numberOfSides, int numberOfDice) {
+		
+		//Compute the average of multiple dice of the same type (See part 2 of Hint_2 as well as all of Hint_3 if you have questions).
+		//The "+ 0.0" is in the equation to ensure that the integer is treated as a double for the calculation. It's important.
+		double avg = (??? + 0.0) * getAverageOfSingleDice(???);
+		
+		return avg;
+	}
+	
+	public double getAverageOfSingleDice(int numberOfSides){
+
+		double average = 0.0;
+	
+		//Logic that computes the average of a single die goes here
+		//If you're having trouble setting this up, check out part 1 of Hint_2
+		//Make sure to add "+ 0.0" to the integer part of your average calculation.
+		////////See the getAverageOfMultipleDice function for an example of this.
+	
+		return average;
+	}

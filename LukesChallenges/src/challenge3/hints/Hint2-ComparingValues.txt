@@ -1,0 +1,14 @@
+Comparing values can be a little tricky. Most primitive data types have a "compareTo" method.
+You'll be writing something similar to it. The EASIEST way to do this is to make a method that takes in 2 pizza types, like so:
+
+public int comparePizzas(Pizza p1, Pizza p2) {
+
+}
+
+You might've noticed that the return value for this method is an integer? That's correct. In the compareTo method, your logic should
+return an integer. 
+		If p1.getPricePerSquareInch() is larger than p2.getPricePerSquareInch() the integer you return should be a positive value.
+		If p1.getPricePerSquareInch() is smaller than p2.getPricePerSqureInch() the integer you return should be a negative value.
+		If p1.getPricePerSquareInch() and p2.getPricePerSquareInch() are equal, the integer you return should be 0.
+		
+	Bonus points if you figure out a clean way to do this in one line of code.

@@ -1,0 +1,64 @@
+Once you have a compareTo() method written, you might be getting a headache as to how you'll decide where things go in the array.
+This hint is here to help with that!
+
+The first thing you'll have to do is loop through the pizzas array (the one that was passed in).
+
+There's a special case that happens for the first element in the array. If it's the first element in the array,
+just add it to the ArrayList. That's it. Super easy.
+
+For all other elements in the array, there's a little more work to do:
+	1. Loop through the ArrayList and use your compareTo method to determine whether the current element in 
+			the array's pricePerSquareInch (array[i]) is less than the current ArrayList's element's P.P.S.I. (ArrayListName.get(j))
+			
+	2a. If it IS less than the current ArrayListElement, add the current array element into the ArrayList at the current index
+			and then use a "break;" statement
+			
+	2b. If it is more than the current ArrayListElement, keep looping through the array until you either
+			find an element that it IS less than, or you reach the end of the array. If you find an element that it IS less than,
+			refer to step 2a. If you make it all the way to the end of the array, then just add the current element on to the end
+			of the array.
+			
+//			
+//		
+//		
+//			
+DANGER SPOILERS AHEAD
+//
+//
+//
+//
+//
+//
+//
+Keep scrolling down if you're really stuck and are stuck on the statements above.
+//
+//
+//
+//
+//
+//
+
+Here's a partial implementation of what I said. I left some "???" spaces. You'll have to figure them out.
+
+
+
+	private Pizza[] sortPizzas(Pizza[] pizzas) {
+		ArrayList<Pizza> sortedPizzas = new ArrayList<Pizza>();
+		
+		
+		for(int i = 0; i < pizzas.length; i++){
+			if(i == 0){
+				sortedPizzas.add(???);
+			} else {
+				for(int j = 0; j < sortedPizzas.size(); j++){
+					if(comparePizzas(pizzas[???], sortedPizzas.get(???)) <= 0){
+						sortedPizzas.add(???, pizzas[???]);
+					}
+				}
+			}
+		}
+		
+		
+		return (Pizza[]) (sortedPizzas.toArray());
+	}
+

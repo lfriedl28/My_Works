@@ -1,0 +1,6 @@
+If you have multiple dice of the same type (same number of sides), you don't have to compute the average 
+of each one and then add them together. That would be wasting a lot of CPU cycles. 
+Instead, just calculate the average of a single one of the dice and multiply it by the number of dice you have.
+
+That should simplify your code a little bit too. If you were already doing this, great job! I just thought
+I'd make it a hint in case you felt like there was an easier way but hadn't figured it out yet.

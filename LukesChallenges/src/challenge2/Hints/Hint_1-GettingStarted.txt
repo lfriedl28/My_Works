@@ -1,0 +1,14 @@
+In order to compute the average of multiple dice,
+you'll first need to compute the average of a single die.
+
+You may want to create a function for this.
+A basic outline for something like that would look like this:
+
+public double getAverageOfSingleDice(int numberOfSides){
+
+	double average = 0.0;
+	
+	//Logic that computes the average goes here
+	
+	return average;
+}
